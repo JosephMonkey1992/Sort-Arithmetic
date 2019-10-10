@@ -22,7 +22,7 @@ def bubblesort(ls):
             if ls[j]>ls[j+1]:
                 (ls[j],ls[j+1])=(ls[j+1],ls[j])
     return ls
-"""""""""TEST"""""""""""""
+############################TEST#################################
 print("<<< Bubble Sort >>>")
 x=input("请输入待排序数列:\n")
 y=x.split()
@@ -57,7 +57,7 @@ def quicksort(arr):
             left.append(item)
     # 使用迭代进行比较
     return quicksort(left) + [mid] + quicksort(right)
-"""""""""TEST"""""""""""""
+############################TEST#################################
 print("<<< Quick Sort >>>")
 x=input("请输入待排序数列:\n")
 y=x.split()
@@ -84,7 +84,7 @@ def insertionSort(arr):
             preIndex-=1
         arr[preIndex+1] = current
     return arr
-"""""""""TEST"""""""""""""
+############################TEST#################################
 print("<<< Insert Sort >>>")
 x=input("请输入待排序数列:\n")
 y=x.split()
@@ -115,7 +115,7 @@ def selectionSort(arr):
         if i != minIndex:
             arr[i], arr[minIndex] = arr[minIndex], arr[i]
     return arr
-"""""""""TEST"""""""""""""
+############################TEST#################################
 print("<<< Selection Sort >>>")
 x=input("请输入待排序数列:\n")
 y=x.split()
@@ -151,7 +151,7 @@ def shellSort(arr):
             arr[j+gap] = temp
         gap = math.floor(gap/3)
     return arr
-"""""""""TEST"""""""""""""
+############################TEST#################################
 print("<<< Shell Sort >>>")
 x=input("请输入待排序数列:\n")
 y=x.split()
@@ -193,7 +193,7 @@ def merge(left,right):
     while right:
         result.append(right.pop(0));
     return result
-"""""""""TEST"""""""""""""
+############################TEST#################################
 print("<<< Merge Sort >>>")
 x=input("请输入待排序数列:\n")
 y=x.split()
@@ -247,7 +247,7 @@ def heapSort(arr):
         arrLen -=1
         heapify(arr, 0)
     return arr
-"""""""""TEST"""""""""""""
+############################TEST#################################
 print("<<< HeapSort >>>")
 x=input("请输入待排序数列:\n")
 y=x.split()
@@ -332,7 +332,7 @@ def BucketSort(ls):
     for i in range(0,n):
         ls[i]=arr[i]
     return ls
-"""""""""TEST"""""""""""""
+############################TEST#################################
 print("Bucket Sort")
 x=input("请输入待排序数列：\n")
 y=x.split()
@@ -393,7 +393,7 @@ def RadixSort(ls):
             else:
                 ls[n-1-i]=arr[j].pop()   
     return ls
-"""""""""TEST"""""""""""""
+############################TEST#################################
 print("RadixSort")
 x=input("请输入待排序数列：\n")
 y=x.split()
